@@ -1,46 +1,77 @@
-baseURL: "https://examplesite.com/"
-title: ExampleSite
-paginate: 5
+baseURL: "https://sidepun.ch/"
+title: Sidepunch
+paginate: 10
 theme: PaperMod
 
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
+enableEmoji: true
 
+
+# FIXME: CHECK
 googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
   minifyOutput: true
 
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    menu:
+      main:
+        - name: Archive
+          url: archives
+          weight: 5
+        - name: Categories
+          url: categories/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 20
+        - name: Search
+          url: search/
+          weight: 30
+  ko:
+    languageName: "Korean"
+    weight: 2
+    menu:
+      main:
+        - name: 글 목록
+          url: archives
+          weight: 5
+        - name: 카테고리
+          url: categories/
+          weight: 10
+        - name: 태그
+          url: tags/
+          weight: 20
+        - name: 검색
+          url: search/
+          weight: 30
+
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
-  keywords: [Blog, Portfolio, PaperMod]
-  author: Me
-  # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
-  DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
-  hideSummary: false
-  showtoc: false
+  showtoc: true
   tocopen: false
+  displayFullLangName: true
 
   assets:
-    # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "<link / abs url>"
     favicon16x16: "<link / abs url>"
@@ -48,14 +79,14 @@ params:
     apple_touch_icon: "<link / abs url>"
     safari_pinned_tab: "<link / abs url>"
 
-  label:
-    text: "Home"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
+  # label:
+  #   text: "Home"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
 
   # profile-mode
   profileMode:
-    enabled: false # needs to be explicitly set
+    enabled: true # needs to be explicitly set
     title: ExampleSite
     subtitle: "This is subtitle"
     imageUrl: "<img location>"
@@ -74,19 +105,11 @@ params:
     Content: Welcome to my blog
 
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/kim-sardine"
 
   analytics:
     google:
-      SiteVerificationTag: "XYZabc"
-    bing:
-      SiteVerificationTag: "XYZabc"
-    yandex:
       SiteVerificationTag: "XYZabc"
 
   cover:
@@ -132,3 +155,14 @@ menu:
 #         guessSyntax: true
 #         lineNos: true
 #         style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series

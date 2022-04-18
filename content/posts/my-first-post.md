@@ -1,11 +1,11 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "My First Post"
 description: "Desc Text."
-date: {{ .Date }}
+date: 2022-04-18T23:23:31+09:00
 author: ["kim.sardine"]
 tags: []
 categories: []
-series: []
+series: ['wow']
 weight: 1
 aliases: []
 draft: false
