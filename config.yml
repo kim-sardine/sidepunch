@@ -1,6 +1,6 @@
 baseURL: "https://sidepun.ch/"
 title: Sidepunch
-paginate: 10
+paginate: 1020
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -9,39 +9,21 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 
-
 # FIXME: CHECK
 googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
   minifyOutput: true
-
+defaultContentLanguage: ko
 languages:
-  en:
-    languageName: "English"
+  ko:
+    languageName: "Korean"
     weight: 1
     menu:
       main:
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: Categories
-          url: categories/
-          weight: 10
-        - name: Tags
-          url: tags/
-          weight: 20
-        - name: Search
-          url: search/
-          weight: 30
-  ko:
-    languageName: "Korean"
-    weight: 2
-    menu:
-      main:
         - name: 글 목록
-          url: archives
+          url: archives/
           weight: 5
         - name: 카테고리
           url: categories/
@@ -52,13 +34,29 @@ languages:
         - name: 검색
           url: search/
           weight: 30
-
+  en:
+    languageName: "English"
+    weight: 2
+    menu:
+      main:
+        - name: Archive
+          url: archives/
+          weight: 5
+        - name: Categories
+          url: categories/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 20
+        - name: Search
+          url: search/
+          weight: 30
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
@@ -73,31 +71,28 @@ params:
 
   assets:
     # disableFingerprinting: true
-    favicon: "<link / abs url>"
-    favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
-    apple_touch_icon: "<link / abs url>"
-    safari_pinned_tab: "<link / abs url>"
+    favicon: "favicon.ico"
+    favicon16x16: "favicon.ico"
+    favicon32x32: "favicon.ico"
+    apple_touch_icon: "favicon.ico"
+    safari_pinned_tab: "favicon.ico"
 
   # label:
   #   text: "Home"
-  #   icon: /apple-touch-icon.png
+  #   icon: /logo.png
   #   iconHeight: 35
 
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
-    imageWidth: 120
-    imageHeight: 120
-    imageTitle: my image
+    title: Sidepunch
+    imageUrl: "logo.png"
+    imageWidth: 180
+    imageHeight: 180
+    imageTitle: sidepunch
     buttons:
-      - name: Posts
-        url: posts
-      - name: Tags
-        url: tags
+      - name: Projects
+        url: projects
 
   # home-info mode
   homeInfoParams:
@@ -118,7 +113,7 @@ params:
     hiddenInSingle: true # hide on single page
 
   editPost:
-    URL: "https://github.com/<path_to_repo>/content"
+    URL: "https://github.com/kim-sardine/sidepunch/content"
     Text: "Suggest Changes" # edit text
     appendFilePath: true # to append file path to Edit link
 
@@ -132,29 +127,16 @@ params:
     threshold: 0.4
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
-menu:
-  main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: example
-      name: example.org
-      url: https://example.org
-      weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
+pygmentsUseClasses: true
+markup:
+  highlight:
+    anchorLineNos: true
+    lineNos: true
+    guessSyntax: true
+    codeFences: true
+    style: monokai
 
 outputs:
   home:
