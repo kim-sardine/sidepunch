@@ -10,7 +10,7 @@ buildExpired: false
 enableEmoji: true
 
 # FIXME: CHECK
-googleAnalytics: UA-123-45
+googleAnalytics: G-C5HQ3PE7XZ
 
 minify:
   disableXML: true
