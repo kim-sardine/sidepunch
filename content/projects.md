@@ -20,25 +20,25 @@ tocopen: true
 
 # React App
 
-## [HOI - Hair On Image](https://hoi.sidepun.ch/)
+## [HOI - Hair On Image](https://hoi.sidepunch.co/)
 
 [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/kim-sardine/hoi-react)
 
 > Draw hair on image
 
-## [wadm](http://wadm.sidepun.ch/)
+## [wadm](http://wadm.sidepunch.co/)
 
 [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/kim-sardine/wadm-react)
 
 > Weighted Average Decision Matrix for Web
 
-## [RPAP](http://rpap.sidepun.ch/)
+## [RPAP](http://rpap.sidepunch.co/)
 
 [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/kim-sardine/rpap)
 
 > Random Picker and Presenter
 
-## [Bongmap](http://bongmap.sidepun.ch/)
+## [Bongmap](http://bongmap.sidepunch.co/)
 
 [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/kim-sardine/bong-map)
 
@@ -63,15 +63,3 @@ tocopen: true
 [![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/kim-sardine/no-leetcode-no-youtube)
 
 > No Leetcode, No Youtube
-
----
-
-# Golang
-
-## [kfadmin](https://github.com/kim-sardine/kfadmin)
-
-[![Repo](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://github.com/kim-sardine/kfadmin)
-
-> Kubeflow Admin CLI Tool
-
----

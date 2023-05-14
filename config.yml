@@ -1,6 +1,6 @@
-baseURL: "https://sidepun.ch/"
+baseURL: "https://sidepunch.co/"
 title: Sidepunch
-paginate: 1020
+paginate: 10
 theme: PaperMod
 
 enableRobotsTXT: true
